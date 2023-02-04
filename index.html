@@ -27,11 +27,24 @@
            </div>
        </div>
     </div>
+    
+    <!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>We are a group of music enthusiasts who have come together to create a platform for discovering new music. Our goal is to provide a user-friendly interface where anyone can find the music they love, regardless of their taste or genre preferences.</p>
+    <p>We believe that music has the power to bring people together and evoke emotions in a unique way. With this in mind, we have built our website to be a space where you can connect with others who share your love of music, discover new artists, and explore different genres.</p>
+    <p>We hope that you find our platform to be a valuable resource and we look forward to helping you discover the music that speaks to you.</p>
+    <p>Thank you for visiting our site and supporting our mission!</p>
+  </div>
+</section>
+
 
     <audio id="mySong">
         <source src="images/song.mp3" type="audio/mp3">
     </audio>
-    
+    <button onclick="openAbout()">About</button>
+
 
     <script>
         var mySong = document.getElementById("mySong");
@@ -48,5 +61,11 @@
             }
         }
     </script>
+    <script>
+  function openAbout() {
+    document.getElementById("about").scrollIntoView();
+  }
+</script>
+
 </body>
 </html>
